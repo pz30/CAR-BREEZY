@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR BREEZY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ASSETS/CSS/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="ASSETS/JQUERY/jquery.js"></script>
+    <script src="ASSETS/Java Script/javascript.js"></script>
+
+    
+
+
+</head>
+<body>
+    <!------------------ HEADER START ------------------>
+    <section id="header">
+        <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-image: url(ASSETS/IMAGES/BrandColor/1.jpg); ">
+        <a class="navbar-brand" href="#" >
+          <img class="img-fluid" src="ASSETS/IMAGES/BrandColor/carBREEZY (1).png" style="height: max-content; width: 120px;" alt="carBREEZY">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link newcars-btn" href="#newcarstag">NEW CARS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#usedcars">USED CARS</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#brands1">BRANDS</a>
+              </li>
+              <li class="nav-item active  ">
+                <a class="nav-link" href="#about_us">ABOUT US</a>
+              </li>
+            
+          </ul>
+          <button class="btn my-2 my-sm-0" onclick="opencontactus()" type="submit">CONTACT US</button>
+        </div>
+        
+      </nav>
+    <!-- NAVBAR END -->
+    
+      
+    
+
+    <!-- carousel SLider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%;margin-top: 50px;">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="ASSETS/IMAGES/CAROUSEL/2.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="ASSETS/IMAGES/CAROUSEL/3.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="ASSETS/IMAGES/CAROUSEL/1.png" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- carousel slider END -->
+
+    <!-- Welcome text -->
+    <div class="row " style="background-image: url(ASSETS/IMAGES/BrandColor/1.jpg); background-size: cover;">
+        <div class="col-lg-6 col-sm-12" style="background-color: transparent;">
+            <div class="container">
+              <h1 class="display-4 text-center font-weight-bold" style="color: white ;">Welcome to carBREEZY</h1>
+              <p class="lead text-center font-weight-bold" style="color: red;" >We make finding cars easy for you</p>
+            </div>
+          </div>
+          <div class="jumbotron jumbotron-fluid col-lg-6 col-sm-12" style="background-color: transparent;">
+            <div class="">
+                <div class="filter row text-center mx-auto">
+                  <div class="card col-6" style="background-color: transparent; border: none;">
+                    <div class="row d-block mx-auto">
+                      <button class="btn btn-lg font-weight-bold text-dark" style="background-color: white; border-radius: 10px; padding: 5px 40px 5px 40px;">Buy</button>
+                      <div class="d-flex">
+                        <a href="#newcarstag" class="nav-link text-dark "><button id="newcarsbtn" class="btn btn-sm newcars-btn font-weight-bold">New Car</button></a>
+                      <a href="#usedcars" class="nav-link text-dark " ><button id="usedcarsbtn" class="btn btn-sm newcars-btn font-weight-bold">Used Car</button></a>
+                      </div>
+                      </div>
+
+                      
+                  </div>
+                  
+                  <div class="card col-6" style="background-color: transparent; border: none;">
+                    <div class="row d-block p-1">
+                      <button class="btn btn-lg font-weight-bold text-dark" style="background-color: white; border-radius: 10px; padding: 5px 40px 5px 40px;">Sell</button>
+                      <button id="newcarsbtn" class="btn btn-sm usedcars-btn font-weight-bold nav-link mx-auto p-1" style="margin-top: 5px;" onclick="opensellyourcar1()">Used Car</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <!-- welcome text end   -->
+    </section>
+    <!------------------ HEADER END ------------------>
+
+
+    <!-- contactus start -->
+<div class="container mt-5 contactusform" id="contactus">
+  <button class="btn btn-sm" onclick="closecontactus()">x</button>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h2 class="font-weight-bold text-center text-white">Contact Us</h2>
+            
+            <h3 class="font-weight-normal text-white">Phone: <span>+92 321-23-456-789</span></h3>
+            <form>
+              <div class="form-group text-white">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group text-white">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group text-white" >
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- contactus end -->
+
+
+      <!-- sell your cAR -->
+      <section>
+        <div class="sellyourcar" id="sellcar">
+          <div>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter your Full Name">
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contact Number</label>
+                <input type="number" class="form-control" id="exampleInputNumber1" placeholder="Contact Number">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Select Car Brand</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Select Brand</option>
+                  <option>Honda</option>
+                  <option>KIA</option>
+                  <option>Suzuki</option>
+                  <option>Toyota</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputAdtitle1">Enter Ad Title</label>
+                <input type="text" class="form-control" id="exampleInputadtitle1" placeholder="Ad Title">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputModel1">Enter Your Car Model</label>
+                <input type="number" class="form-control" id="exampleInputModel1" placeholder="Enter Model">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Upload 4 Images of your car</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+            </form>
+          </div>
+          <div class="p-3">
+            <button class="btn btn-primary" onclick="closesellyourcar()">Submit</button>
+            <button class="btn btn-secondary" onclick="closesellyourcar()">Back</button>
+          </div>
+        </div>
+      </section>
+     <!-- SELL YOUR CAR -->
+
+     
+<!-- Tag -->
+<p id="brands1"></p>
+
+
+    <!------------------------ Main Content Start -------------------->
+    <section id="main content">
+
+      <!-- Brands Start  -->
+      <section class="brands d-block" id="brands" style="margin-top: 100px;">
+        <h3 class="mx-auto text-dark text-center font-weight-bold">Brands</h3>
+        <div class="d-flex">
+          <div class="card col-3" style="border: none;">
+            <a href="#"><img class="img-fluid" src="ASSETS/IMAGES/CARDS/Brands/Honda.png" alt=""></a>
+
+          </div>
+          <div class="card col-3" style="border: none;">
+            <a href="#"><img class="img-fluid" src="ASSETS/IMAGES/CARDS/Brands/Kia.png" alt=""></a>
+
+          </div>
+          <div class="card col-3" style="border: none;">
+            <a href="#"><img class="img-fluid" src="ASSETS/IMAGES/CARDS/Brands/Suzuki.png" alt=""></a>
+
+          </div>
+          <div class="card col-3" style="border: none;">
+            <a href="#"><img class="img-fluid" src="ASSETS/IMAGES/CARDS/Brands/Toyota.png" alt=""></a>
+
+          </div>
+        </div>    
+      </section>  
+      <!-- Brands end -->
+
+
+
+      <!-- Featured start -->
+      <h3 class="mx-auto text-dark text-center font-weight-bold">Featured Cars</h3>
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="ASSETS/IMAGES/Featured Cars/1.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="ASSETS/IMAGES/Featured Cars/2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="ASSETS/IMAGES/Featured Cars/3.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="ASSETS/IMAGES/Featured Cars/4.png" alt="Fourth slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      
+      <!-- featured end -->
+      
+
+
+
+<!-- tag -->
+<p id="newcarstag" class="p-0 m-0"></p>
+        
+        
+      <!-- New cars  Start-->
+        <section class="new-cars" style="margin-top: 0px;">
+                <!-- Filter Start -->
+      <div class="tag" style="margin: 0px; padding: 0px;"></div>
+      <h2 class="mx-auto text-dark text-center font-weight-bold" id="newcars" style="margin-top: 150px;">New Cars</h2>
+        <div class="filter mx-auto mr-auto my-2 text-center " >
+            <a href="#newcarstag"><button class="btn" id="hondabutton">HONDA</button></a>
+            <a href="#newcarstag"><button class="btn" id="kiabutton">KIA</button></a>
+            <a href="#newcarstag"><button class="btn" id="suzukibutton">SUZUKI</button></a>
+            <a href="#newcarstag"><button class="btn" id="toyotabutton">TOYOTA</button></a>
+        </div>
+
+      <!-- Filter End -->
+          
+
+            <div id="honda">
+                <div class="h3 mx-auto text-center p-0" id="hondaheading">HONDA</div>
+              <div class="card-group m-5">
+                <div class="card border-0" style="margin-top: 0px;">
+                  <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Honda/accord/1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold m-0">Honda Accord 2023</h5>
+                    <p class="card-text">The 2023 Honda Accord combines sleek design, advanced technology, and exceptional performance, making it the perfect sedan for modern drivers.</p>
+                    <p class="card-text"><small class="font-weight-bold">PKR 15700000/. </small></p>                    
+                    
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Honda/civix rs turbo/1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold m-0">Honda Civic 2023</h5>
+                    <p class="card-text">The 2023 Honda Civic offers a stylish and sporty design, impressive fuel efficiency, and cutting-edge features, perfect for urban adventures.</p>
+                    <p class="card-text font-weight-bold"><small class=" font-weight-bold">PKR 12000000/.</small></p>
+                  </div>
+                </div>
+                <div class="card border-0">
+                  <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Honda/city/1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title font-weight-bold m-0">Honda City 2023</h5>
+                    <p class="card-text">
+                        The 2023 Honda City boasts a compact yet spacious design, fuel-efficient engine, and advanced safety features, ideal for urban commuting and everyday driving.</p>
+                    <p class="card-text"><small class="font-weight-bold">PKR 5600000/.</small></p>
+                  </div>
+                </div>
+                <div class="card border-0">
+                    <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Honda/brv/1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold m-0">Honda BRV 2023</h5>
+                      <p class="card-text">The 2023 Honda BR-V is a versatile and rugged SUV, equipped with ample space, powerful performance, and off-road capabilities for adventurous journeys.</p>
+                      <p class="card-text"><small class="font-weight-bold">PKR 9100000/.</small></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+            <div id="kia">
+                
+              <div class="h3 mx-auto text-center p-0" id="kiaheading">KIA</div>
+              <div class="card-group m-5">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Kia/Picanto/1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold m-0">KIA PICANTO 2023</h5>
+                      <p class="card-text">The KIA Picanto is a stylish and compact city car, offering agile handling, fuel efficiency, and a host of modern features for urban driving.</p>
+                      <p class="card-text"><small class="font-weight-bold">PKR 3500000/.</small></p>
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Kia/Sorento/1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold m-0">KIA SORENTO 2023</h5>
+                      <p class="card-text">The KIA Sorento is a spacious and versatile SUV, featuring premium comfort, advanced technology, and robust performance, perfect for family adventures.</p>
+                      <p class="card-text"><small class="font-weight-bold">PKR 6500000/.</small></p>
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Kia/sportage/1.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold m-0">KIA SPORTAGE 2023</h5>
+                      <p class="card-text">
+                          The KIA Sportage is a sleek and dynamic SUV, offering a blend of style, performance, and advanced features for an exhilarating driving experience.</p>
+                      <p class="card-text"><small class="font-weight-bold">PKR 12000000/.</small></p>
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                      <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Kia/stonic/1.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title font-weight-bold m-0">KIA STONIC 2023</h5>
+                        <p class="card-text">
+                          The KIA Stonic is a compact and stylish crossover, combining modern design, efficient performance, and a range of smart features for urban exploration.</p>
+                        <p class="card-text"><small class="font-weight-bold">PKR 7000000/.</small></p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+                
+            <div id="suzuki">
+                <div class="h3 mx-auto text-center p-0" id="suzukiheading">SUZUKI</div>
+                <div class="card-group m-5">
+                    <div class="card border-0">
+                      <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Suzuki/alto/1.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title font-weight-bold m-0">SUZUKI ALTO 2023</h5>
+                        <p class="card-text">The Suzuki Alto is a nimble and fuel-efficient hatchback, perfect for city driving, with a compact design and practical features.</p>
+                        <p class="card-text"><small class="font-weight-bold">PKR 3000000/.</small></p>
+                      </div>
+                    </div>
+                    <div class="card border-0">
+                      <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Suzuki/cultus/1.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title font-weight-bold m-0">SUZUKI CULTUS 2023</h5>
+                        <p class="card-text">The Suzuki Cultus is a stylish and reliable hatchback, delivering a balance of performance, comfort, and modern features for everyday driving.</p>
+                        <p class="card-text"><small class="font-weight-bold">PKR 4000000/.</small></p>
+                      </div>
+                    </div>
+                    <div class="card border-0">
+                      <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Suzuki/swift/1.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title font-weight-bold m-0">SUZUKI SWIFT 2023</h5>
+                        <p class="card-text">
+                            The Suzuki Swift is a sporty and agile hatchback, combining sleek design, responsive handling, and advanced technology for an exhilarating driving experience.</p>
+                        <p class="card-text"><small class="font-weight-bold">PKR 4800000/.</small></p>
+                      </div>
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Suzuki/wagnor/1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold m-0">SUZUKI WAGON R 2023</h5>
+                          <p class="card-text">
+                            The Suzuki Wagon R is a practical and spacious compact car, offering versatility, fuel efficiency, and a comfortable ride for urban adventures.</p>
+                          <p class="card-text"><small class="font-weight-bold">PKR 3500000/.</small></p>
+                        </div>
+                      </div>
+                  </div> 
+            </div> 
+                  
+            <div id="toyota">
+                <div class="h3 mx-auto text-center p-0" id="toyotaheading">TOYOTA</div>
+                  <div class="card-group m-5">
+                      <div class="card border-0">
+                        <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Toyota/corolla/1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold m-0">TOYOTA COROLLA 2023</h5>
+                          <p class="card-text">
+                            The Toyota Corolla is a reliable and efficient sedan, known for its longevity, practicality, and advanced safety features, making it a popular choice worldwide.</p>
+                          <p class="card-text"><small class="font-weight-bold">PKR 9100000/.</small></p>
+                        </div>
+                      </div>
+                      <div class="card border-0">
+                        <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Toyota/Land Cruiser/1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold m-0">TOYOTA LAND CRUISER 2023</h5>
+                          <p class="card-text">The Toyota Land Cruiser is a legendary and capable off-road SUV, combining ruggedness, luxury, and advanced technology for unparalleled adventures.</p>
+                          <p class="card-text"><small class="font-weight-bold">PKR 24000000/.</small></p>
+                        </div>
+                      </div>
+                      <div class="card border-0">
+                        <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Toyota/Revo/1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title font-weight-bold m-0">TOYOTA REVO 2023</h5>
+                          <p class="card-text">
+                            The Toyota Revo is a robust and versatile pickup truck, designed to tackle tough terrains with its power, durability, and spacious cargo capacity.</p>
+                          <p class="card-text"><small class="font-weight-bold">PKR 19000000/.</small></p>
+                        </div>
+                      </div>
+                      <div class="card border-0">
+                          <img class="card-img-top" src="ASSETS/IMAGES/CARDS/New Cars/Toyota/yaris/1.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title font-weight-bold m-0">TOYOTA YARIS 2023</h5>
+                            <p class="card-text">
+                                The Toyota Yaris is a compact and efficient hatchback, offering agile performance, modern features, and a comfortable interior for urban driving.</p>
+                            <p class="card-text"><small class="font-weight-bold">PKR 6500000/.</small></p>
+                          </div>
+                        </div>
+                    </div>    
+            </div>      
+        </section>
+        <!-- New Cars end  -->
+
+
+        <!-- Used cars start  -->
+        <section class="used-cars" id="usedcars" style="margin-top: 100px;">
+<br>
+          <!-- list of used Cars start -->
+          <div class="container-fluid" >
+            <div class="container">
+              <h2 class="mx-auto text-dark text-center font-weight-bold"  style="padding-top: 50px;">Used Cars</h2>
+                    <div class="container" >
+                      <ul class="list-unstyled row">
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Toyota Corolla 1.6 AT</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2017 - 98000 km - Petrol - 1600cc - Automatic</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 44 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Suzuki Wagon R</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2019 - 57875 km - Hybrid - 660cc - Automatic</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 38.5 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Honda City 2018 silver</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2018 - 70000 km - Petrol - 1300cc - Manual</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 36.75 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/2.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Kia Picanto 2021</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2021 - 35000 km - Petrol - 998cc - Manual</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 33.5 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Toyota Corolla 1.6 AT</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2017 - 98000 km - Petrol - 1600cc - Automatic</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 44 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Suzuki Wagon R</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2019 - 57875 km - Hybrid - 660cc - Automatic</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 38.5 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Honda City 2018 silver</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2018 - 70000 km - Petrol - 1300cc - Manual</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 36.75 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="row " style="margin-top: 50px;">
+                          <div class="row ">
+                            <div class="card col-lg-3 col-sm-12 border-0" >
+                              <img class="card-img img-fluid" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/2.webp" alt="Card image cap">
+                            </div>
+                            <div class="card col-lg-6 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="card-title d-flex" style="justify-content: space-between;">
+                                  <h4 class="cardd-title text-left font-weight-bold">Kia Picanto 2021</h4>
+                                  <!-- <h4 class="text-right font-weight-bold h4">Rs 5400000/.</h4> -->
+                                </div> 
+                                <p class="card-text" >2021 - 35000 km - Petrol - 998cc - Manual</p>
+                                <p class="card-text" ><small class="font-weight-bold">PKR 33.5 lacs</small></p>
+                              </div>
+                            </div>
+                            <div class="card col-lg-3 col-sm-12 border-0">
+                              <div class="card-body">
+                                <div class="d-block">
+                                  <button onclick="openPopup1()" class="btn btn-primary m-1 text-center" style="padding-left: 17px; padding-right: 18px;">See Details <span class="productdescription"></span></button>
+                                  <button class="btn btn-secondary m-1" data-toggle="modal" data-target="#exampleModal">View Contact</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        
+                      </ul>
+                    </div>
+          
+                    <div class="container" style="justify-content: center; display: flex; margin-top: 20px;">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+            </div>
+  
+            
+          </div>
+  
+
+
+<!-- product description start -->
+<section>
+  
+  <div class="productdescription " id="seedetails">
+    <div class="d-flex card-group">
+      <div class="d-block container card border-0">
+        <div class="mx-auto">
+          <img class="img-fluid" id="productimage" alt="car" src="">
+        </div>
+        <div>
+          <ul class="d-flex list-unstyled">
+            <li onclick="changeimage1()">
+              <img class="img-thumbnail" id="image1" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/1.webp" alt="">
+            </li>
+            <li onclick="changeimage2()">
+              <img class="img-thumbnail" id="image2" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/2.webp" alt="">
+            </li>
+            <li onclick="changeimage3()">
+              <img class="img-thumbnail" id="image3" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/3.webp" alt="">
+            </li>
+            <li onclick="changeimage4()">
+              <img class="img-thumbnail" id="image4" src="ASSETS/IMAGES/CARDS/Used Cars/Toyota/Corolla/Corolla 2017 white/4.webp" alt="">
+            </li>
+            <li onclick="changeimage5()">
+              <img class="img-thumbnail" id="image5" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/1.webp" alt="">
+            </li>
+            <li onclick="changeimage6()">
+              <img class="img-thumbnail" id="image6" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/2.webp" alt="">
+            </li>
+            <li onclick="changeimage7()">
+              <img class="img-thumbnail" id="image7" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/3.webp" alt="">
+            </li>
+            <li onclick="changeimage8()">
+              <img class="img-thumbnail" id="image8" src="ASSETS/IMAGES/CARDS/Used Cars/Suzuki/Wagon R/4.webp" alt="">
+            </li>
+            <li onclick="changeimage9()">
+              <img class="img-thumbnail" id="image9" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="">
+            </li>
+            <li onclick="changeimage10()">
+              <img class="img-thumbnail" id="image10" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="">
+            </li>
+            <li onclick="changeimage11()">
+              <img class="img-thumbnail" id="image11" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="">
+            </li>
+            <li onclick="changeimage12()">
+              <img class="img-thumbnail" id="image12" src="ASSETS/IMAGES/CARDS/Used Cars/Honda/City silver 2018/1.webp" alt="">
+            </li>
+            <li onclick="changeimage13()">
+              <img class="img-thumbnail" id="image13" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/1.png" alt="">
+            </li>
+            <li onclick="changeimage14()">
+              <img class="img-thumbnail" id="image14" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/1.png" alt="">
+            </li>
+            <li onclick="changeimage15()">
+              <img class="img-thumbnail" id="image15" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/1.png" alt="">
+            </li>
+            <li onclick="changeimage16()">
+              <img class="img-thumbnail" id="image16" src="ASSETS/IMAGES/CARDS/Used Cars/Kia/Picanto 2021/1.png" alt="">
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="card container border-0">
+        <div>
+          <h3 class="font-weight-normal" id="popupheading"></h3>
+          <h4 class="font-weight-normal">Seller's comments</h4>
+        </div>
+        <div>
+          <ul class="list-unstyled text-left font-weight-bold">
+            <li>Price: <span class="font-weight-normal"> 45.5 lacs</span></li>
+            <li>Negotiable: <span class="font-weight-normal">Yes</span></li>
+            <li>Color: <span class="font-weight-normal"> Black</span></li>
+            <li>Mileage: <span class="font-weight-normal">45000 kms</span></li>
+            <li>Transmission: <span class="font-weight-normal"> Automatic</span></li>
+            <li>Model: <span class="font-weight-normal"> 2018</span></li>
+            <li>Displacement: <span class="font-weight-normal"> 1800cc</span></li>
+          </ul>
+        </div>
+        
+        <div class="d-flex">
+          <input type="text" id="hero-field" placeholder=" Give your offer" name="hero-field" class="form-control p-2">
+          <a href="#"><button class="btn btn-primary btn-lg">Send</button></a>
+        </div>
+        <div class="p-3">
+          <button class="btn btn-primary" onclick="closePopup()">Seller's Contact</button>
+          <button class="btn btn-secondary" onclick="closePopup()">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+</div>
+
+<!-- product description end -->
+
+
+
+<!-- sellers contact start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Contact Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-unstyled">
+          <li>Name: Amjad Khan</li>
+          <li>Contact: +92 321 23456789</li>
+          <li>Contact Hours: 9am-5pm</li>
+          <li><input type="text" placeholder=" leave a message" style="border-radius: 10px;">
+            
+            <button type="button" class="btn btn-sm btn-primary" style="border-radius: 15px;">SEND</button></li>    
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Call Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- sellers contact end -->
+
+            
+          
+        </section>
+        <!-- Used cars end -->
+
+
+
+        
+    </section>
+    <!------------------------ Main Content End ----------------------->
+
+
+    <!----------------- about Start -------------------------->
+    <section id="about_us">
+        <div class="jumbotron container-fluid" style="background-color: #a9b7ef;">
+            <div class="container">
+              <h1 class="display-4 text-center">About Car Breezy</h1>
+              <p class="lead">
+                Welcome to Car Breezy, your ultimate destination for hassle-free car buying and selling in Karachi! We understand that purchasing or selling a car can be a daunting task, but with our innovative online platform, we aim to simplify the process and provide you with a seamless experience. Whether you're a car enthusiast looking for your dream ride or a seller hoping to find the right buyer, Car Breezy is here to make your journey effortless. Our user-friendly interface, extensive car listings, and expert guidance ensure that you can buy or sell your car with confidence and convenience.</p>
+    
+              <p class="lead">
+                At Car Breezy, we prioritize customer satisfaction above all else. Our team of seasoned professionals is dedicated to ensuring that you have a stress-free and transparent experience when it comes to buying or selling a car. We have carefully curated a wide range of pre-owned and new cars, providing detailed information and high-quality images to help you make an informed decision. With our advanced search filters, finding the perfect car that fits your preferences and budget has never been easier. Trust Car Breezy to connect you with genuine buyers or sellers, making the entire process efficient and trustworthy.
+              </p>
+                
+              <p class="lead">
+                What sets Car Breezy apart is our commitment to providing exceptional customer support. Our knowledgeable support team is available round the clock to answer any queries or concerns you may have. Whether you need assistance with listing your car, understanding the buying process, or simply seeking guidance on pricing and negotiation, we are here to help. We understand the unique needs of the Karachi car market, and our platform is designed to cater to the local automotive landscape. With Car Breezy, buying or selling a car in Karachi has never been this convenient, reliable, and enjoyable. Experience the difference today!
+              </p>
+            </div>
+          </div>
+    </section>
+    <!----------------- about End ---------------------------->
+
+
+
+
+
+    <!---------------- footer Start -------------------------->
+    <footer class="page-footer" style="background-image: url(ASSETS/IMAGES/BrandColor/1.jpg);" >
+        <div style="padding-top: 20px;">
+          <img class="img-fluid d-block" src="ASSETS/IMAGES/BrandColor/carBREEZY (1).png" style="height: 100px; margin-left: 40%; margin-right: 40%; margin-bottom: 30px;"></div>
+        <div class="row  mx-auto" >
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mx-auto text-center">
+            <h5 class="font-weight-bold text-center" style="color: silver;">SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <input type="text" placeholder=" enter your email address" style="border-radius: 10px;">
+            
+            <button type="button" class="btn btn-sm btn-primary" style="border-radius: 15px;">Subscribe</button>              
+
+          </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto text-center">
+                <h5 class="font-weight-bold" style="color: silver;">Featured Brnads</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#newcarstag" class="text-white">HONDA</a></li>
+                    <li><a href="#newcarstag" class="text-white">KIA</a></li>
+                    <li><a href="#newcarstag" class="text-white">SUZUKI</a></li>
+                    <li><a href="#newcarstag" class="text-white">TOYOTA</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto text-center">
+                <h5 class="font-weight-bold" style="color: silver;">Top New Cars</h5>
+                <ul class="list-unstyled ">
+                    <li ><a href="#newcarstag" class="text-white">HONDA CIVIC</a></li>
+                    <li><a href="#newcarstag" class="text-white">TOYOTA LAND CRUISER</a></li>
+                    <li><a href="#newcarstag" class="text-white">SUZUKI ALTO</a></li>
+                    <li><a href="#newcarstag" class="text-white">KIA SPORTAGE</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto text-center">
+              <h5 class="font-weight-bold" style="color: silver;">Follow Us</h5>
+                <ul class="list-unstyled">
+                  <li class="nav-item p-1"><button class="btn btn-primary text-white" style="background-color: #3b5998;"><span class="fa fa-facebook"> Facebook</span></button></li>
+              <li class="nav-item p-1"><button class="btn btn-primary text-white" style="background-color: red;"><span class="fa fa-youtube"> Youtube</span></button></li>
+              <li class="nav-item p-1"><button class="btn btn-primary text-white" style="background-color: #00ACEE;"> <span class="fa fa-twitter text-white"> Twitter</span></button></li>
+              <li class="nav-item p-1"><button class="btn btn-primary text-white" style="background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);"> <span class="fa fa-instagram"> Instagram</span></button></li>      
+                </ul>
+
+            </div>
+            
+        </div>
+    </footer>
+    <!-------------- footer end ------------------------------>
+
+
+</body>
+</html>
